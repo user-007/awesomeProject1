@@ -50,6 +50,18 @@ func main() {
 
 	fmt.Println(p)
 	fmt.Println(*p)
-
+	/*
+		add a Todo
+	*/
+	//app Patch("/api/todos/:id", func(c *fiber.Ctx) error {
+	//	id := c.Params("id")
+	//	for i, todo:=	range todos{
+	//		if fmt.Sprint(todo.ID) == id{
+	//			todos[i].Completed = true
+	//			return c.Status(200).JSON(todos[i])
+	//		}
+	//	}
+	//	return c.Status(app.Listen(":4000"))
+	//})
 	log.Fatal(app.Listen(":4000"))
 }
